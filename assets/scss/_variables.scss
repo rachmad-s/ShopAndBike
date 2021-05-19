@@ -1,0 +1,40 @@
+// Fonts
+$font-family-sans-serif:      'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-base:            $font-family-sans-serif;
+
+// APP COLOR
+
+$primary:       #D10921;
+$secondary:     #CECECE;
+$success:       $green;
+$info:          $cyan;
+$warning:       #FBB03B;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+$softblue:      #D9DDEC;
+$darkblue:      #031D83;
+$white:         #ffffff;
+$black:         #000000;          
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "softblue":   $softblue,
+  "darkblue":   $darkblue,
+  "white":      $white,
+  "black":      $black
+), $theme-colors);
+
+// Button
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         1.5rem;
+$btn-padding-y:               $input-btn-padding-y;
+$btn-padding-x:               $input-btn-padding-x;
