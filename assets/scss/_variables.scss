@@ -12,6 +12,7 @@ $warning:       #FBB03B;
 $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-800;
+$softgray:      #FAFAFA;
 $softblue:      #D9DDEC;
 $darkblue:      #031D83;
 $white:         #ffffff;
@@ -27,6 +28,7 @@ $theme-colors: map-merge((
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
+  "softgray":   $softgray,
   "softblue":   $softblue,
   "darkblue":   $darkblue,
   "white":      $white,

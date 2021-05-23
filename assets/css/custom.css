@@ -32,6 +32,38 @@
     font-size: 2rem;
 }
 
+.feather-1{
+    width: .75rem;
+    height: .75rem;
+}
+.feather-2{
+    width: .8rem;
+    height: .8rem;
+}
+.feather-3{
+    width: 1rem;
+    height: 1rem;
+}
+.feather-4{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.feather-5{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.feather-6{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+.feather-7{
+    width: 2rem;
+    height: 2rem;
+}
+.feather-filled{
+    fill: currentColor;
+}
+
 /* Navbar section */
 .main-navbar{
     position: absolute;
@@ -82,6 +114,35 @@
     background:blue;
 }
 
+/* Section */
+section{
+    position: relative
+}
+.section-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.section-60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.section-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-140{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
 /* Button */
 .btn-pills{
     border-radius: 2rem !important;
@@ -94,6 +155,18 @@
     line-height: 3.1rem;
     border-radius: 50%;
 }
+.square-button{
+    font-size: .1rem; 
+    padding: .375rem .75rem;
+}
+
+/* Border */
+.br-1{
+    border-radius: .55rem;
+}
+.br-2{
+    border-radius: 1.55rem;
+}
 
 /* Text Options */
 .ls-1{
@@ -101,4 +174,53 @@
 }
 .ls-2{
     letter-spacing: 2px;
+}
+
+/* Flex */
+.flex-fill div{
+    flex: 1 1 auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 0;
+}
+
+/* shadow */
+.shadow {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12),0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.shadow-lg{
+    box-shadow: 0px 10px 30px -1px rgb(41 35 88 / 45%)
+}
+
+.card-img-overlay{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 75%);
+    border-radius: inherit;
+}
+
+.background-image{
+    background-size: cover
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.dark-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4)
+}
+
+
+/* Testimoni Section */
+#testimoni .nav-pills .nav-link.active, #testimoni .nav-pills .show > .nav-link{
+    background:transparent;
+    color:  #2d2c30;
+}
+#testimoni .nav-pills .nav-link{
+    color: #2d2c30;
 }

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="104" viewBox="0 0 110 104">
+  <defs>
+    <filter id="Rectangle_1952" x="0" y="0" width="110" height="104" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_4638" data-name="Group 4638" transform="translate(23.555 21)">
+    <g transform="matrix(1, 0, 0, 1, -23.56, -21)" filter="url(#Rectangle_1952)">
+      <rect id="Rectangle_1952-2" data-name="Rectangle 1952" width="62" height="56" rx="10" transform="translate(24 21)" fill="#031d83" opacity="0.1"/>
+    </g>
+    <g id="battery" transform="translate(13.099 8.486)">
+      <path id="Path_2847" data-name="Path 2847" d="M37.54,17.229a.6.6,0,0,0,.6-.6v-2.41a.6.6,0,0,0-.6-.6H33.324V10.6a.6.6,0,0,0-.6-.6h-2.41a.6.6,0,0,0-.6.6v3.012H10.433V10.6a.6.6,0,0,0-.6-.6H7.421a.6.6,0,0,0-.6.6v3.012H2.6a.6.6,0,0,0-.6.6v2.41a.6.6,0,0,0,.6.6h.6v1.2H2.6a.6.6,0,0,0-.6.6v2.41a.6.6,0,0,0,.6.6h.6V36.5H2.6a.6.6,0,0,0-.6.6v3.614a.6.6,0,0,0,.6.6H37.54a.6.6,0,0,0,.6-.6V37.107a.6.6,0,0,0-.6-.6h-.6V22.048h.6a.6.6,0,0,0,.6-.6v-2.41a.6.6,0,0,0-.6-.6h-.6v-1.2ZM30.914,11.2h1.2v2.41h-1.2Zm-22.89,0h1.2v2.41h-1.2ZM36.938,40.119H3.2v-2.41H36.938ZM4.41,36.5V22.048h8.433V36.5Zm9.638,0V22.048H26.1V36.5Zm13.252,0V22.048h8.433V36.5Zm9.638-15.662H3.2v-1.2H36.938ZM4.41,18.433v-1.2H35.733v1.2Zm-1.2-2.41v-1.2H36.938v1.2Z" transform="translate(-2 -5.181)" fill="#031d83"/>
+      <path id="Path_2848" data-name="Path 2848" d="M10,4h3.614V5.2H10Z" transform="translate(-5.181 -2.795)" fill="#031d83"/>
+      <path id="Path_2849" data-name="Path 2849" d="M49.2,5.614h1.2V4.41h1.2V3.2h-1.2V2H49.2V3.2H48v1.2h1.2Z" transform="translate(-20.291 -2)" fill="#031d83"/>
+      <path id="Path_2850" data-name="Path 2850" d="M8,41H9.2v1.2H8Z" transform="translate(-4.386 -17.507)" fill="#031d83"/>
+      <path id="Path_2851" data-name="Path 2851" d="M12,41h3.614v1.2H12Z" transform="translate(-5.976 -17.507)" fill="#031d83"/>
+      <path id="Path_2852" data-name="Path 2852" d="M8,49h3.614v1.2H8Z" transform="translate(-4.386 -20.688)" fill="#031d83"/>
+      <path id="Path_2853" data-name="Path 2853" d="M16,49h1.2v1.2H16Z" transform="translate(-7.567 -20.688)" fill="#031d83"/>
+      <path id="Path_2854" data-name="Path 2854" d="M8,37h3.614v1.2H8Z" transform="translate(-4.386 -15.917)" fill="#031d83"/>
+      <path id="Path_2855" data-name="Path 2855" d="M16,37h1.2v1.2H16Z" transform="translate(-7.567 -15.917)" fill="#031d83"/>
+      <path id="Path_2856" data-name="Path 2856" d="M8,45h6.024v1.2H8Z" transform="translate(-4.386 -19.098)" fill="#031d83"/>
+      <path id="Path_2857" data-name="Path 2857" d="M8,33h6.024v1.2H8Z" transform="translate(-4.386 -14.326)" fill="#031d83"/>
+      <path id="Path_2858" data-name="Path 2858" d="M54,41h1.2v1.2H54Z" transform="translate(-22.676 -17.507)" fill="#031d83"/>
+      <path id="Path_2859" data-name="Path 2859" d="M46,41h3.614v1.2H46Z" transform="translate(-19.495 -17.507)" fill="#031d83"/>
+      <path id="Path_2860" data-name="Path 2860" d="M50,49h3.614v1.2H50Z" transform="translate(-21.086 -20.688)" fill="#031d83"/>
+      <path id="Path_2861" data-name="Path 2861" d="M46,49h1.2v1.2H46Z" transform="translate(-19.495 -20.688)" fill="#031d83"/>
+      <path id="Path_2862" data-name="Path 2862" d="M50,37h3.614v1.2H50Z" transform="translate(-21.086 -15.917)" fill="#031d83"/>
+      <path id="Path_2863" data-name="Path 2863" d="M46,37h1.2v1.2H46Z" transform="translate(-19.495 -15.917)" fill="#031d83"/>
+      <path id="Path_2864" data-name="Path 2864" d="M46,45h6.024v1.2H46Z" transform="translate(-19.495 -19.098)" fill="#031d83"/>
+      <path id="Path_2865" data-name="Path 2865" d="M46,33h6.024v1.2H46Z" transform="translate(-19.495 -14.326)" fill="#031d83"/>
+      <path id="Path_2866" data-name="Path 2866" d="M33.348,36.512a.61.61,0,0,0-.518-.3H29.818V32.6a.6.6,0,0,0-.452-.584.611.611,0,0,0-.681.3l-3.614,6.626a.6.6,0,0,0,.012.6.61.61,0,0,0,.518.3h3.012v3.614a.6.6,0,0,0,.452.584.644.644,0,0,0,.151.018.6.6,0,0,0,.53-.313l3.614-6.626A.6.6,0,0,0,33.348,36.512Zm-3.53,4.572V39.229a.6.6,0,0,0-.6-.6h-2.6l2-3.662v1.855a.6.6,0,0,0,.6.6h2.6Z" transform="translate(-11.145 -13.929)" fill="#031d83"/>
+    </g>
+  </g>
+</svg>
