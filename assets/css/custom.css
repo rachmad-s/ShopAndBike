@@ -31,6 +31,12 @@
 .fs-7{
     font-size: 2rem;
 }
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
 
 .feather-1{
     width: .75rem;
@@ -63,6 +69,9 @@
 .feather-filled{
     fill: currentColor;
 }
+.opacity-75{ 
+    opacity: .75;
+}
 
 /* Navbar section */
 .main-navbar{
@@ -81,7 +90,7 @@
 }
 .hero-background{
     width: 100%;
-    height: 110vh;
+    height: 650px;
 }
 .hero-background img{ 
     width: 100%;
@@ -92,8 +101,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding-top:130px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0) 100%);
     height: 100%;
@@ -112,6 +123,18 @@
 .hero-carousel .swiper-wrapper{
     width:80%;
     background:blue;
+}
+.hero-feature{
+    border-top-right-radius: 3rem;
+}
+.hero-feature::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    top: 0;
+    left: -100%;
 }
 
 /* Section */
@@ -190,12 +213,31 @@ section{
 }
 
 .shadow-lg{
-    box-shadow: 0px 10px 30px -1px rgb(41 35 88 / 45%)
+    box-shadow: 0px 10px 20px -1px rgba(20, 17, 43, 0.15)
 }
 
 .card-img-overlay{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 75%);
     border-radius: inherit;
+}
+
+.card-top-cta{
+    border-radius: inherit;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding:.5rem 1rem;
+    padding-bottom: 1.5rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 75%);
+
+}
+
+.card.br-1 .card-img-top{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
 
 .background-image{
@@ -223,4 +265,92 @@ section{
 }
 #testimoni .nav-pills .nav-link{
     color: #2d2c30;
+}
+#testimoni .nav-pills{
+    flex-direction: column;
+}
+#testimoni .tab-content{
+    padding: 0.5rem 0;
+}
+#testimoni .card{
+    border-radius: .8rem;
+}
+#testimoni .card .arrow-wrapper{
+    position: absolute;
+    height: 100%;
+    border-radius: .8rem;
+    background: var(--darkblue);
+    width: 40px;
+    top:0;
+    transition: .5s;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+#testimoni .card .arrow-wrapper .arrow-icon{
+    background: var(--primary);
+    width: 35px;
+    height: 35px;
+    padding-left: 4px;
+    padding-top: 4px;
+    color: white;
+    margin-left:-15px;
+    border-radius: 50%;
+}
+#testimoni .nav-pills .nav-link.active .card .arrow-wrapper{
+    width: calc(100% + 40px);
+}
+#testimoni .nav-pills .nav-link.active .card .card-body{
+    position:relative; 
+    z-index: 3;
+    color: white;
+}
+
+.section-merge{
+    padding-bottom: 20rem;
+}
+.section-merge-up{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-merge-up .merged{
+    height: 120px;
+    width: 100%;
+    background: red;
+    margin-top: -220px;
+    background-color: transparent;
+    position: relative;
+    z-index: 3;
+}
+.section-merge-up .merged .row{
+    height:100%;
+}
+
+/* Product Section */
+#product #product-tab{
+    background: #fff;
+    padding: 0;
+    height:100%;
+    border-bottom: 0;
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+}
+#product #product-tab .nav-link{
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    text-align: left;
+}
+#product #product-tab li:first-child{
+    border-top-left-radius: 2.5rem;
+}
+#product #product-tab li:last-child{
+    border-top-right-radius: 2.5rem;
+}
+#product #product-tab .nav-link.active{
+    border: none;
+    background-color: var(--darkblue);
+    color: var(--white);
 }
