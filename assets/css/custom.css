@@ -120,20 +120,6 @@
     height: 100%;
     width: 100%;
 }
-.hero-carousel{
-    width: 80%;
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    overflow: hidden;
-}
-.hero-carousel-container{
-    width:100%;
-    display: flex;
-}
-.hero-carousel .swiper-wrapper{
-    width:80%;
-    background:blue;
-}
 .hero-features-wrapper{
     position: absolute;
     z-index: 3;
@@ -406,4 +392,27 @@ footer .nav-link{
 }
 .form-group-fill input, .form-group-fill select, .form-group-fill .form-control{
     width: 100% !important;
+}
+
+/* Owl Carousel Styles */
+.owl-nav-center .owl-nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(50% - 50px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.owl-nav-center .owl-prev, .owl-nav-center .owl-next{
+    width: 40px;
+    height: 40px;
+}
+.owl-nav-center .owl-prev.disabled, .owl-nav-center .owl-next.disabled{
+    opacity: .2;
+}
+.owl-nav-center .owl-nav object{
+    width: 40px;
+    height: 40px;
+    pointer-events: none; 
 }
