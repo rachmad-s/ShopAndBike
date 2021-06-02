@@ -111,25 +111,33 @@
                         <ul class="nav nav-tabs nav-justified" id="product-tab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="product-1-tab" data-toggle="tab" href="#product-1" role="tab" aria-controls="product-1" aria-selected="true">
-                                    <object data="assets/icons/ban.svg" width="80" height="80"> </object>
+                                    <svg width="80" height="80" viewBox="0 0 111 104">
+                                     <use xlink:href="#tire-icon" />
+                                    </svg>
                                     Ban
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="product-2-tab" data-toggle="tab" href="#product-2" role="tab" aria-controls="product-2" aria-selected="false">
-                                    <img src="assets/icons/oil.svg" width="80">
+                                    <svg width="80" height="80" viewBox="0 0 111 104">
+                                        <use xlink:href="#oil-icon" />
+                                    </svg>
                                     Oli
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="product-3-tab" data-toggle="tab" href="#product-3" role="tab" aria-controls="product-3" aria-selected="false">
-                                    <img src="assets/icons/battery.svg" width="80">
+                                    <svg width="80" height="80" viewBox="0 0 111 104">
+                                        <use xlink:href="#battery-icon" />
+                                    </svg>
                                     Batterai
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="product-4-tab" data-toggle="tab" href="#product-4" role="tab" aria-controls="product-4" aria-selected="false">
-                                    <img src="assets/icons/shock.svg" width="80">
+                                    <svg width="80" height="80" viewBox="0 0 111 104">
+                                        <use xlink:href="#shock-icon" />
+                                    </svg>
                                     Shock Absorben
                                 </a>
                             </li>
@@ -143,24 +151,29 @@
                     <form action="">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-inline">
-                                    <div class="form-group mb-2 form-group-fill">
-                                        <label for="search" class="sr-only">Search</label>
-                                        <input type="search" class="form-control" id="search" placeholder="Cari Nama Produk">
+                                <div class="input-group mb-2 shadow-lg">
+                                    <input type="search" class="form-control border-0" id="search" placeholder="Cari Nama Produk">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text border-0 bg-white">
+                                            <i data-feather="search"></i>
+                                        </span>
                                     </div>
-                                    <button type="submit" class="btn btn-primary mx-sm-3 mb-2">
-                                        Pencarian Lanjut
-                                    </button>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-inline">
                                     <div class="form-group mb-2 form-group-fill">
-                                        <label for="search" class="sr-only">Search</label>
-                                        <input type="search" class="form-control" id="search" placeholder="Cari Nama Produk">
+
+                                        <select class="form-control border-0 shadow-lg">
+                                            <option value="">Semua Brand</option>
+                                            <option value="">Brand 1</option>
+                                            <option value="">Brand 2</option>
+                                            <option value="">Brand 3</option>
+                                            <option value="">Brand 4</option>
+                                        </select>
                                     </div>
-                                    <button type="submit" class="btn btn-primary mx-sm-3 mb-2">
-                                        Pencarian Lanjut
+                                    <button type="submit" class="btn btn-primary mx-sm-3 mb-2 btn-icon">
+                                        <i data-feather="filter" class="feather-5"></i>
                                     </button>
                                 </div>
                             </div>
@@ -408,6 +421,419 @@
     </section>
 
     <!-- END PRODUCT SECTION -->
+
+
+    <!-- START PROMO SECTION -->
+
+    <section class="section-80 bg-softgray">
+        <div class="half-background" style="background-image: url(assets/images/hero-background.jpg)">
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="font-weight-bold text-light">
+                            Promo Terkait
+                        </h2>
+                        <div class="d-flex">
+                            <button class="btn btn-link square-button text-darkblue promoPrev">
+                                <i data-feather="arrow-left"></i>
+                            </button>
+                            <button class="btn btn-link square-button text-darkblue promoNext">
+                                <i data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="promo-carousel owl-carousel">
+                        <div class="card border-0">
+                            <img src="assets/images/promo/promo-1.jpg" alt="Promo 1" class="card-img">
+                            <div class="card-img-overlay d-flex flex-wrap">
+                                <div class="align-self-end">
+                                    <h6 class="font-weight-light text-light">
+                                        Harga Special
+                                    </h6>
+                                    <h5 class="text-light font-weight-bold mb-4">
+                                        Ban Motor
+                                    </h5>
+                                    <a href="#" class="btn btn-pills btn-primary fs-2 ls-2 text-uppercase">Lihat Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <img src="assets/images/promo/promo-1.jpg" alt="Promo 1" class="card-img">
+                            <div class="card-img-overlay d-flex flex-wrap">
+                                <div class="align-self-end">
+                                    <h6 class="font-weight-light text-light">
+                                        Harga Special
+                                    </h6>
+                                    <h5 class="text-light font-weight-bold mb-4">
+                                        Ban Motor
+                                    </h5>
+                                    <a href="#" class="btn btn-pills btn-primary fs-2 ls-2 text-uppercase">Lihat Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <img src="assets/images/promo/promo-1.jpg" alt="Promo 1" class="card-img">
+                            <div class="card-img-overlay d-flex flex-wrap">
+                                <div class="align-self-end">
+                                    <h6 class="font-weight-light text-light">
+                                        Harga Special
+                                    </h6>
+                                    <h5 class="text-light font-weight-bold mb-4">
+                                        Ban Motor
+                                    </h5>
+                                    <a href="#" class="btn btn-pills btn-primary fs-2 ls-2 text-uppercase">Lihat Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <img src="assets/images/promo/promo-1.jpg" alt="Promo 1" class="card-img">
+                            <div class="card-img-overlay d-flex flex-wrap">
+                                <div class="align-self-end">
+                                    <h6 class="font-weight-light text-light">
+                                        Harga Special
+                                    </h6>
+                                    <h5 class="text-light font-weight-bold mb-4">
+                                        Ban Motor
+                                    </h5>
+                                    <a href="#" class="btn btn-pills btn-primary fs-2 ls-2 text-uppercase">Lihat Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <img src="assets/images/promo/promo-1.jpg" alt="Promo 1" class="card-img">
+                            <div class="card-img-overlay d-flex flex-wrap">
+                                <div class="align-self-end">
+                                    <h6 class="font-weight-light text-light">
+                                        Harga Special
+                                    </h6>
+                                    <h5 class="text-light font-weight-bold mb-4">
+                                        Ban Motor
+                                    </h5>
+                                    <a href="#" class="btn btn-pills btn-primary fs-2 ls-2 text-uppercase">Lihat Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END OF PROMO SECTION -->
+
+    <!-- START PARTNER SECTION -->
+
+<section class="our-partner bg-softgray">
+    <div class="container">
+        <div class="title">
+            <h2 class="font-weight-bold mb-0">Mitra Kami</h2>
+        </div>
+    </div>
+    <div class="merged-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="mitra-carousel-wrapper">
+                        <div class="mitra-carousel owl-nav-center owl-carousel">
+                            <img src="https://via.placeholder.com/220x150.html" alt="">
+                            <img src="https://via.placeholder.com/220x150.html" alt="">
+                            <img src="https://via.placeholder.com/220x150.html" alt="">
+                            <img src="https://via.placeholder.com/220x150.html" alt="">
+                            <img src="https://via.placeholder.com/220x150.html" alt="">
+                            <img src="https://via.placeholder.com/220x150.html" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END OF PARTNER SECTION -->
+
+<!-- START FOOTER SECTION -->
+<footer style="background-image: url(assets/images/hero-background-2x.jpg)" class="background-image">
+    <div class="dark-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-5">
+                <img src="assets/images/logo.svg" class="mb-4" alt="ShopAndBike">
+                <p class="mb-5 fs-2">
+                    High quality Azerbaijani furniture made from eco-friendly
+                    materials. Designed for modern, minimalist apartments
+                </p>
+                <div class="media">
+                    <div class="media-left mr-3">
+                        <i data-feather="phone" class="feather-8 feather-stroke-1"></i>
+                    </div>
+                    <div class="media-right">
+                        <p class="mb-1 fw-500">Hubungi Kami</p>
+                        <p class="mb-1 font-weight-light">0808-1500-300</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="font-weight-bold">Produk</p>
+                        <ul class="nav flex-column fs-2">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Battery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Aki</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Shock Absorber</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Oli</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="font-weight-bold">Dukungan</p>
+                        <ul class="nav flex-column fs-2">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Syarat dan Ketentuan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Kebijakam Privasi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Call Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="font-weight-bold">Social Media</p>
+                        <ul class="nav flex-column fs-2">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">
+                                    <i data-feather="facebook" class="feather-filled feather-4"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">
+                                    <i data-feather="instagram" class="feather-4"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END OF FOOTER SECTION -->
+
+
+    <!-- SVGs : Used in Product Tab Section -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+        <symbol  width="111" height="104" viewBox="0 0 111 104" id="tire-icon">
+        <defs>
+          <filter id="Rectangle_1950" x="0" y="0" width="111" height="104" filterUnits="userSpaceOnUse">
+            <feOffset dy="3" input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feFlood flood-opacity="0.051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+          </filter>
+        </defs>
+        <g id="Group_4650" data-name="Group 4650" transform="translate(24.001 21)">
+          <g transform="matrix(1, 0, 0, 1, -24, -21)" filter="url(#Rectangle_1950)">
+            <rect id="Rectangle_1950-2" data-name="Rectangle 1950" width="63" height="56" rx="10" transform="translate(24 21)" fill="currentColor" opacity="0.203"/>
+          </g>
+          <g id="Outline" transform="translate(11.624 11.788)">
+            <path id="Path_2834" data-name="Path 2834" d="M9.564,36.565c.117.176.235.352.364.512a9.137,9.137,0,0,0,1.771,1.77c.168.131.343.25.521.371A9.206,9.206,0,0,0,15.541,40.6c.2.036.4.073.6.1a9.186,9.186,0,0,0,1.252.087,9.055,9.055,0,0,0,1.242-.086c.2-.023.4-.059.617-.1h.018a9.173,9.173,0,0,0,3.3-1.375c.176-.117.352-.235.512-.364a9.117,9.117,0,0,0,1.77-1.773c.131-.169.251-.344.369-.519A9.222,9.222,0,0,0,26.6,33.23c.036-.2.072-.395.094-.587a9.042,9.042,0,0,0,0-2.5c-.024-.2-.059-.4-.1-.623v-.012a9.2,9.2,0,0,0-1.374-3.3c-.117-.176-.238-.352-.364-.512a9.137,9.137,0,0,0-1.77-1.77c-.168-.131-.343-.25-.521-.371a9.206,9.206,0,0,0-3.321-1.377c-.2-.036-.4-.073-.6-.1a9.1,9.1,0,0,0-2.5,0c-.2.023-.4.059-.617.1h-.018a9.173,9.173,0,0,0-3.3,1.375c-.176.117-.352.235-.512.364A9.118,9.118,0,0,0,9.933,25.7c-.131.169-.251.344-.369.519a9.222,9.222,0,0,0-1.379,3.332c-.036.2-.071.395-.094.587a9.042,9.042,0,0,0,0,2.5c.025.2.059.4.1.623v.012a9.2,9.2,0,0,0,1.374,3.3Zm-.045-2.828h2.205l-1.558,1.555A7.98,7.98,0,0,1,9.519,33.737Zm5.525,5.525a8.024,8.024,0,0,1-1.555-.645l1.555-1.56Zm4.694,0V37.057l1.555,1.557a8.02,8.02,0,0,1-1.555.648Zm4.877-3.97-1.558-1.555h2.206a8.005,8.005,0,0,1-.648,1.555Zm.647-6.249H23.057l1.558-1.555A7.98,7.98,0,0,1,25.262,29.042Zm-5.525-5.525a8.024,8.024,0,0,1,1.555.645l-1.555,1.56Zm-4.694,0v2.205l-1.554-1.557A7.964,7.964,0,0,1,15.043,23.517Zm-2.626,1.341c.021-.015.042-.028.062-.043l2.736,2.741a.587.587,0,0,0,1-.414V23.264c.028,0,.052-.009.081-.013a7.93,7.93,0,0,1,1.093-.077c.081,0,.163.006.245.009a8.118,8.118,0,0,1,.861.069l.069.011v3.877a.587.587,0,0,0,1,.414L22.3,24.818c.023.017.046.031.068.048a8.008,8.008,0,0,1,1.552,1.553c.016.02.029.042.044.062l-2.741,2.736a.587.587,0,0,0,.414,1h3.877c0,.028.009.052.013.08a7.866,7.866,0,0,1,0,2.2.555.555,0,0,1-.011.069h-3.88a.587.587,0,0,0-.414,1L23.965,36.3c-.017.022-.031.045-.049.068a8,8,0,0,1-1.553,1.551c-.021.015-.042.028-.059.043l-2.736-2.741a.587.587,0,0,0-1.005.414v3.877c-.028,0-.052.009-.081.013a7.832,7.832,0,0,1-2.2,0,.557.557,0,0,1-.069-.011V35.638a.587.587,0,0,0-1-.414l-2.736,2.741c-.023-.017-.046-.031-.068-.048a8.008,8.008,0,0,1-1.552-1.553c-.016-.02-.029-.042-.044-.059l2.741-2.736a.587.587,0,0,0-.414-1.005H9.265c0-.028-.009-.052-.013-.08a7.866,7.866,0,0,1,0-2.2.555.555,0,0,1,.011-.069h3.88a.587.587,0,0,0,.414-1l-2.738-2.736c.017-.022.031-.045.049-.068a8,8,0,0,1,1.55-1.551Zm-2.251,2.629,1.558,1.555H9.518a8.006,8.006,0,0,1,.648-1.555Z" transform="translate(-4.509 -11.439)" fill="currentColor"/>
+            <path id="Path_2835" data-name="Path 2835" d="M22.76,38.521A1.76,1.76,0,1,0,21,36.76,1.76,1.76,0,0,0,22.76,38.521Zm0-2.347a.587.587,0,1,1-.587.587A.587.587,0,0,1,22.76,36.174Z" transform="translate(-9.879 -16.81)" fill="currentColor"/>
+            <path id="Path_2836" data-name="Path 2836" d="M23,32h1.174v1.174H23Z" transform="translate(-10.705 -15.57)" fill="currentColor"/>
+            <path id="Path_2837" data-name="Path 2837" d="M23,42h1.174v1.174H23Z" transform="translate(-10.705 -19.702)" fill="currentColor"/>
+            <path id="Path_2838" data-name="Path 2838" d="M28,37h1.174v1.174H28Z" transform="translate(-12.771 -17.636)" fill="currentColor"/>
+            <path id="Path_2839" data-name="Path 2839" d="M18,37h1.174v1.174H18Z" transform="translate(-8.639 -17.636)" fill="currentColor"/>
+            <path id="Path_2840" data-name="Path 2840" d="M14.929,36.86c.176,0,.346-.006.512-.015a.524.524,0,0,0,.075.015H24.9V35.687H20.31c.172-.079.34-.165.508-.252.046-.023.093-.045.138-.068.286-.151.564-.315.837-.486.073-.045.144-.093.215-.14q.323-.212.632-.442c.065-.048.13-.094.194-.144.105-.082.207-.166.31-.251v.022H36.053a1.76,1.76,0,0,1-1.76,1.76H28.425V36.86h5.868a2.937,2.937,0,0,0,2.934-2.934V28.058a2.937,2.937,0,0,0-2.934-2.934h-.015a2.9,2.9,0,0,0,.6-1.76V17.5a2.9,2.9,0,0,0-.6-1.76h.015A2.937,2.937,0,0,0,37.227,12.8V6.934A2.937,2.937,0,0,0,34.293,4H17.276a2.937,2.937,0,0,0-2.934,2.934v4.122a12.909,12.909,0,0,0,.587,25.8Zm3.355-25.367c-.225-.059-.451-.117-.68-.168-.168-.036-.339-.063-.51-.092-.225-.038-.45-.073-.678-.1-.176-.02-.352-.034-.528-.048-.124-.009-.245-.027-.369-.033v-.6H36.053v1.174H18.778l-.015,0C18.6,11.575,18.444,11.536,18.284,11.493Zm9.323,10.034c-.029-.151-.065-.3-.1-.45,0-.02-.008-.04-.013-.059h6.211v1.174h-6c-.03-.224-.061-.447-.1-.666Zm-.441-1.684c-.072-.215-.15-.426-.235-.636q-.088-.221-.176-.438c-.015-.032-.026-.066-.041-.1h6.992v1.174Zm-.934,10.342c.029-.053.062-.1.09-.158q.207-.389.388-.795h9.343v1.174H26.107C26.149,30.332,26.192,30.259,26.232,30.185Zm-1.856,2.568c.032-.035.062-.072.094-.107.214-.235.422-.475.62-.726.025-.032.047-.065.072-.1.059-.08.117-.162.18-.244H36.053v1.174Zm11.677-4.694H27.168c.013-.039.025-.079.038-.117q.151-.469.267-.948c.018-.073.032-.148.048-.222.035-.157.072-.312.1-.469h6.671a1.76,1.76,0,0,1,1.76,1.757Zm-8.268-2.934c0-.033,0-.069,0-.1.03-.352.049-.708.049-1.071,0-.2-.016-.391-.025-.587h5.893a1.76,1.76,0,0,1-1.76,1.76ZM33.706,17.5H26.113c-.109-.188-.23-.37-.349-.553-.059-.09-.11-.183-.171-.272-.22-.32-.454-.634-.7-.936h7.057A1.76,1.76,0,0,1,33.706,17.5Zm.587-2.934H23.786c-.159-.15-.327-.285-.492-.426-.111-.1-.218-.2-.331-.286-.251-.2-.511-.386-.775-.566-.067-.046-.13-.1-.2-.143-.185-.121-.38-.228-.571-.34H36.053A1.76,1.76,0,0,1,34.293,14.562ZM17.276,5.174H34.293a1.76,1.76,0,0,1,1.76,1.76H28.434V8.108h7.619V9.281H15.516V8.108H27.251V6.934H15.516A1.76,1.76,0,0,1,17.276,5.174Zm-2.347,7.041q.579,0,1.15.055a11.677,11.677,0,0,1,2.371.487V12.8h.126a11.73,11.73,0,0,1,8.089,11.149,11.129,11.129,0,0,1-.123,1.678q-.074.521-.192,1.026A11.723,11.723,0,0,1,15.48,35.67c-.182.011-.364.016-.551.016a11.736,11.736,0,1,1,0-23.472Z" transform="translate(-2.047 -4)" fill="currentColor"/>
+            <path id="Path_2841" data-name="Path 2841" d="M43,58h1.174v1.174H43Z" transform="translate(-18.969 -26.313)" fill="currentColor"/>
+          </g>
+        </g>
+        </symbol>
+      </svg>
+      
+
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none"> 
+        <symbol width="111" height="104" viewBox="0 0 111 104" id="oil-icon">
+            <defs>
+              <filter id="Rectangle_1951" x="0" y="0" width="111" height="104" filterUnits="userSpaceOnUse">
+                <feOffset dy="3" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="8" result="blur"/>
+                <feFlood flood-opacity="0.051"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g id="Group_4637" data-name="Group 4637" transform="translate(23.532 21)">
+              <g transform="matrix(1, 0, 0, 1, -23.53, -21)" filter="url(#Rectangle_1951)">
+                <rect id="Rectangle_1951-2" data-name="Rectangle 1951" width="63" height="56" rx="10" transform="translate(24 21)" fill="currentColor" opacity="0.1"/>
+              </g>
+              <g id="oil" transform="translate(20.995 11.652)">
+                <g id="Group_4577" data-name="Group 4577" transform="translate(7.482 15.023)">
+                  <g id="Group_4576" data-name="Group 4576">
+                    <path id="Path_2842" data-name="Path 2842" d="M205.953,229.3l-2.746-4.394L200.46,229.3a3.026,3.026,0,0,0,2.566,4.63h.361a3.026,3.026,0,0,0,2.566-4.63Zm-2.566,3.561h-.361a1.957,1.957,0,0,1-1.659-2.995l1.84-2.944,1.84,2.945a1.957,1.957,0,0,1-1.66,2.994Z" transform="translate(-200 -224.904)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4579" data-name="Group 4579" transform="translate(3.741 12.825)">
+                  <g id="Group_4578" data-name="Group 4578" transform="translate(0)">
+                    <path id="Path_2843" data-name="Path 2843" d="M156.291,192H145.6a1.605,1.605,0,0,0-1.6,1.6V207.5a1.605,1.605,0,0,0,1.6,1.6h10.688a1.605,1.605,0,0,0,1.6-1.6V193.6A1.605,1.605,0,0,0,156.291,192Zm.534,15.5a.535.535,0,0,1-.534.534H145.6a.535.535,0,0,1-.534-.534V193.6a.535.535,0,0,1,.534-.534h10.688a.535.535,0,0,1,.534.534Z" transform="translate(-144 -192)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4581" data-name="Group 4581" transform="translate(0)">
+                  <g id="Group_4580" data-name="Group 4580">
+                    <path id="Path_2844" data-name="Path 2844" d="M107.291,11.111l-6.466-4.445V4.275H99.757V1.6a1.605,1.605,0,0,0-1.6-1.6H90.672a1.605,1.605,0,0,0-1.6,1.6V4.275H88v26.72a2.14,2.14,0,0,0,2.138,2.138h17.1a2.14,2.14,0,0,0,2.138-2.138V15.074A4.808,4.808,0,0,0,107.291,11.111ZM90.138,1.6a.535.535,0,0,1,.534-.534h1.069V3.206H92.81V1.069h1.069V3.206h1.069V1.069h1.069V3.206h1.069V1.069h1.069a.535.535,0,0,1,.534.534V4.275h-8.55Zm18.169,29.392a1.07,1.07,0,0,1-1.069,1.069h-17.1a1.07,1.07,0,0,1-1.069-1.069V7.482h8.55V6.413h-8.55V5.344H99.757V6.413H98.688V7.482h1.437l6.561,4.51a3.74,3.74,0,0,1,1.621,3.083Z" transform="translate(-88)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4583" data-name="Group 4583" transform="translate(8.003 26.349)">
+                  <g id="Group_4582" data-name="Group 4582" transform="translate(0 0)">
+                    <rect id="Rectangle_1960" data-name="Rectangle 1960" width="1" height="1" transform="translate(0.468 0)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4585" data-name="Group 4585" transform="translate(10.004 26.349)">
+                  <g id="Group_4584" data-name="Group 4584" transform="translate(0 0)">
+                    <rect id="Rectangle_1961" data-name="Rectangle 1961" width="1" height="1" transform="translate(0.469 0)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4587" data-name="Group 4587" transform="translate(12.005 26.349)">
+                  <g id="Group_4586" data-name="Group 4586" transform="translate(0 0)">
+                    <rect id="Rectangle_1962" data-name="Rectangle 1962" width="2" height="1" transform="translate(0.468 0)" fill="currentColor"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+        </symbol>
+      </svg>
+      
+
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+        <symbol id="battery-icon" width="110" height="104" viewBox="0 0 110 104">
+            <defs>
+              <filter id="Rectangle_1952" x="0" y="0" width="110" height="104" filterUnits="userSpaceOnUse">
+                <feOffset dy="3" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="8" result="blur"/>
+                <feFlood flood-opacity="0.051"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g id="Group_4638" data-name="Group 4638" transform="translate(23.555 21)">
+              <g transform="matrix(1, 0, 0, 1, -23.56, -21)" filter="url(#Rectangle_1952)">
+                <rect id="Rectangle_1952-2" data-name="Rectangle 1952" width="62" height="56" rx="10" transform="translate(24 21)" fill="currentColor" opacity="0.1"/>
+              </g>
+              <g id="battery" transform="translate(13.099 8.486)">
+                <path id="Path_2847" data-name="Path 2847" d="M37.54,17.229a.6.6,0,0,0,.6-.6v-2.41a.6.6,0,0,0-.6-.6H33.324V10.6a.6.6,0,0,0-.6-.6h-2.41a.6.6,0,0,0-.6.6v3.012H10.433V10.6a.6.6,0,0,0-.6-.6H7.421a.6.6,0,0,0-.6.6v3.012H2.6a.6.6,0,0,0-.6.6v2.41a.6.6,0,0,0,.6.6h.6v1.2H2.6a.6.6,0,0,0-.6.6v2.41a.6.6,0,0,0,.6.6h.6V36.5H2.6a.6.6,0,0,0-.6.6v3.614a.6.6,0,0,0,.6.6H37.54a.6.6,0,0,0,.6-.6V37.107a.6.6,0,0,0-.6-.6h-.6V22.048h.6a.6.6,0,0,0,.6-.6v-2.41a.6.6,0,0,0-.6-.6h-.6v-1.2ZM30.914,11.2h1.2v2.41h-1.2Zm-22.89,0h1.2v2.41h-1.2ZM36.938,40.119H3.2v-2.41H36.938ZM4.41,36.5V22.048h8.433V36.5Zm9.638,0V22.048H26.1V36.5Zm13.252,0V22.048h8.433V36.5Zm9.638-15.662H3.2v-1.2H36.938ZM4.41,18.433v-1.2H35.733v1.2Zm-1.2-2.41v-1.2H36.938v1.2Z" transform="translate(-2 -5.181)" fill="currentColor"/>
+                <path id="Path_2848" data-name="Path 2848" d="M10,4h3.614V5.2H10Z" transform="translate(-5.181 -2.795)" fill="currentColor"/>
+                <path id="Path_2849" data-name="Path 2849" d="M49.2,5.614h1.2V4.41h1.2V3.2h-1.2V2H49.2V3.2H48v1.2h1.2Z" transform="translate(-20.291 -2)" fill="currentColor"/>
+                <path id="Path_2850" data-name="Path 2850" d="M8,41H9.2v1.2H8Z" transform="translate(-4.386 -17.507)" fill="currentColor"/>
+                <path id="Path_2851" data-name="Path 2851" d="M12,41h3.614v1.2H12Z" transform="translate(-5.976 -17.507)" fill="currentColor"/>
+                <path id="Path_2852" data-name="Path 2852" d="M8,49h3.614v1.2H8Z" transform="translate(-4.386 -20.688)" fill="currentColor"/>
+                <path id="Path_2853" data-name="Path 2853" d="M16,49h1.2v1.2H16Z" transform="translate(-7.567 -20.688)" fill="currentColor"/>
+                <path id="Path_2854" data-name="Path 2854" d="M8,37h3.614v1.2H8Z" transform="translate(-4.386 -15.917)" fill="currentColor"/>
+                <path id="Path_2855" data-name="Path 2855" d="M16,37h1.2v1.2H16Z" transform="translate(-7.567 -15.917)" fill="currentColor"/>
+                <path id="Path_2856" data-name="Path 2856" d="M8,45h6.024v1.2H8Z" transform="translate(-4.386 -19.098)" fill="currentColor"/>
+                <path id="Path_2857" data-name="Path 2857" d="M8,33h6.024v1.2H8Z" transform="translate(-4.386 -14.326)" fill="currentColor"/>
+                <path id="Path_2858" data-name="Path 2858" d="M54,41h1.2v1.2H54Z" transform="translate(-22.676 -17.507)" fill="currentColor"/>
+                <path id="Path_2859" data-name="Path 2859" d="M46,41h3.614v1.2H46Z" transform="translate(-19.495 -17.507)" fill="currentColor"/>
+                <path id="Path_2860" data-name="Path 2860" d="M50,49h3.614v1.2H50Z" transform="translate(-21.086 -20.688)" fill="currentColor"/>
+                <path id="Path_2861" data-name="Path 2861" d="M46,49h1.2v1.2H46Z" transform="translate(-19.495 -20.688)" fill="currentColor"/>
+                <path id="Path_2862" data-name="Path 2862" d="M50,37h3.614v1.2H50Z" transform="translate(-21.086 -15.917)" fill="currentColor"/>
+                <path id="Path_2863" data-name="Path 2863" d="M46,37h1.2v1.2H46Z" transform="translate(-19.495 -15.917)" fill="currentColor"/>
+                <path id="Path_2864" data-name="Path 2864" d="M46,45h6.024v1.2H46Z" transform="translate(-19.495 -19.098)" fill="currentColor"/>
+                <path id="Path_2865" data-name="Path 2865" d="M46,33h6.024v1.2H46Z" transform="translate(-19.495 -14.326)" fill="currentColor"/>
+                <path id="Path_2866" data-name="Path 2866" d="M33.348,36.512a.61.61,0,0,0-.518-.3H29.818V32.6a.6.6,0,0,0-.452-.584.611.611,0,0,0-.681.3l-3.614,6.626a.6.6,0,0,0,.012.6.61.61,0,0,0,.518.3h3.012v3.614a.6.6,0,0,0,.452.584.644.644,0,0,0,.151.018.6.6,0,0,0,.53-.313l3.614-6.626A.6.6,0,0,0,33.348,36.512Zm-3.53,4.572V39.229a.6.6,0,0,0-.6-.6h-2.6l2-3.662v1.855a.6.6,0,0,0,.6.6h2.6Z" transform="translate(-11.145 -13.929)" fill="currentColor"/>
+              </g>
+            </g>
+        </symbol>
+      </svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+        <symbol width="111" height="104" viewBox="0 0 111 104" id="shock-icon">
+            <defs>
+              <filter id="Rectangle_1953" x="0" y="0" width="111" height="104" filterUnits="userSpaceOnUse">
+                <feOffset dy="3" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="8" result="blur"/>
+                <feFlood flood-opacity="0.051"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g id="Group_4639" data-name="Group 4639" transform="translate(23.999 21)">
+              <g transform="matrix(1, 0, 0, 1, -24, -21)" filter="url(#Rectangle_1953)">
+                <rect id="Rectangle_1953-2" data-name="Rectangle 1953" width="63" height="56" rx="10" transform="translate(24 21)" fill="currentColor" opacity="0.1"/>
+              </g>
+              <g id="shock-breaker" transform="translate(20.736 8.518)">
+                <g id="Group_4594" data-name="Group 4594" transform="translate(2.509 30.552)">
+                  <g id="Group_4593" data-name="Group 4593">
+                    <path id="Path_2867" data-name="Path 2867" d="M146.566,433.175a1.889,1.889,0,1,0,1.889,1.889A1.891,1.891,0,0,0,146.566,433.175Zm0,2.72a.831.831,0,1,1,.831-.831A.832.832,0,0,1,146.566,435.9Z" transform="translate(-144.677 -433.175)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4596" data-name="Group 4596" transform="translate(0)">
+                  <g id="Group_4595" data-name="Group 4595">
+                    <path id="Path_2868" data-name="Path 2868" d="M116.271,4.074a2.977,2.977,0,1,0-5.532,0,2.865,2.865,0,0,0-1.566,1.965.529.529,0,1,0,1.034.226,1.8,1.8,0,0,1,1.1-1.284,2.972,2.972,0,0,0,4.4,0,1.784,1.784,0,0,1,1.142,1.668v4.694h-6.68V8.564a.529.529,0,0,0-1.058,0v3.309a.529.529,0,0,0,.529.529h1.327l-.369.167a1.564,1.564,0,0,0,1.021,2.944v.831l-1.021.462a1.564,1.564,0,0,0,1.021,2.943v.831l-1.021.462a1.564,1.564,0,0,0,1.021,2.943v.831l-1.021.462a1.564,1.564,0,0,0,1.021,2.943V29.3a3.67,3.67,0,1,0,3.778,0V26.542l1.021-.462a1.564,1.564,0,0,0-1.021-2.943v-.832l1.021-.462a1.564,1.564,0,0,0-1.021-2.943v-.832l1.021-.462a1.564,1.564,0,0,0-1.021-2.943v-.832l1.021-.462a1.559,1.559,0,0,0,.851-.968h.108a.529.529,0,0,0,.529-.529V6.65A2.841,2.841,0,0,0,116.271,4.074ZM113.5,4.9a1.919,1.919,0,1,1,1.919-1.919A1.921,1.921,0,0,1,113.5,4.9Zm2.612,27.545a2.612,2.612,0,1,1-2.612-2.612A2.615,2.615,0,0,1,116.117,32.441Zm-3.444-3.574V27.772l1.662-.752v1.846a3.644,3.644,0,0,0-1.662,0Zm2.888-4.673a.5.5,0,0,1,.209-.045.51.51,0,0,1,.209.968l-4.531,2.05a.507.507,0,0,1-.417-.923Zm-2.888.145v-.8l1.662-.752v.8Zm2.888-4.382a.5.5,0,0,1,.208-.045.51.51,0,0,1,.209.968l-4.531,2.05a.507.507,0,0,1-.417-.923Zm-2.888.145v-.8l1.662-.752v.8Zm2.888-4.382a.5.5,0,0,1,.209-.045.51.51,0,0,1,.209.968l-4.531,2.05a.507.507,0,0,1-.417-.923Zm-2.888.145v-.8l1.662-.752v.8Zm3.306-3.459-4.531,2.05a.507.507,0,0,1-.417-.923l2.5-1.131h2.457Z" transform="translate(-109.107)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4598" data-name="Group 4598" transform="translate(2.809 1.388)">
+                  <g id="Group_4597" data-name="Group 4597" transform="translate(0)">
+                    <path id="Path_2869" data-name="Path 2869" d="M150.524,19.679a1.589,1.589,0,1,0,1.589,1.589A1.591,1.591,0,0,0,150.524,19.679Zm0,2.12a.531.531,0,1,1,.531-.531A.532.532,0,0,1,150.524,21.8Z" transform="translate(-148.935 -19.679)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4600" data-name="Group 4600" transform="translate(1.582 9.591)">
+                  <g id="Group_4599" data-name="Group 4599" transform="translate(0)">
+                    <path id="Path_2870" data-name="Path 2870" d="M132.078,135.988h-.01a.529.529,0,0,0,0,1.058h.01a.529.529,0,1,0,0-1.058Z" transform="translate(-131.539 -135.988)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4602" data-name="Group 4602" transform="translate(6.145 9.591)">
+                  <g id="Group_4601" data-name="Group 4601" transform="translate(0)">
+                    <path id="Path_2871" data-name="Path 2871" d="M196.776,135.988h-.01a.529.529,0,1,0,0,1.058h.01a.529.529,0,1,0,0-1.058Z" transform="translate(-196.237 -135.988)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4604" data-name="Group 4604" transform="translate(14.433 30.552)">
+                  <g id="Group_4603" data-name="Group 4603" transform="translate(0)">
+                    <path id="Path_2872" data-name="Path 2872" d="M315.638,433.175a1.889,1.889,0,1,0,1.889,1.889A1.891,1.891,0,0,0,315.638,433.175Zm0,2.72a.831.831,0,1,1,.831-.831A.832.832,0,0,1,315.638,435.9Z" transform="translate(-313.749 -433.175)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4606" data-name="Group 4606" transform="translate(11.925)">
+                  <g id="Group_4605" data-name="Group 4605" transform="translate(0)">
+                    <path id="Path_2873" data-name="Path 2873" d="M286.447,8.047a.529.529,0,0,0-.529.529v2.769h-6.68V6.65a1.784,1.784,0,0,1,1.142-1.668,2.972,2.972,0,0,0,4.4,0,1.8,1.8,0,0,1,1.1,1.294.529.529,0,0,0,.517.419.536.536,0,0,0,.111-.012.529.529,0,0,0,.407-.627,2.863,2.863,0,0,0-1.569-1.979,2.977,2.977,0,1,0-5.532,0A2.84,2.84,0,0,0,278.18,6.65v5.223a.529.529,0,0,0,.529.529h1.327l-.369.167a1.564,1.564,0,0,0,1.021,2.944v.831l-1.021.462a1.564,1.564,0,0,0,1.021,2.944v.831l-1.021.462a1.564,1.564,0,0,0,1.021,2.944v.831l-1.021.462a1.564,1.564,0,0,0,1.021,2.944V29.3a3.669,3.669,0,0,0,.422,6.51.529.529,0,1,0,.423-.97,2.613,2.613,0,1,1,1.99.04.529.529,0,1,0,.383.986,3.669,3.669,0,0,0,.559-6.566V26.542l1.021-.462a1.564,1.564,0,0,0-1.021-2.944v-.831l1.021-.462a1.564,1.564,0,0,0-1.021-2.944v-.831l1.021-.462a1.564,1.564,0,0,0-1.021-2.944v-.831l1.021-.462a1.562,1.562,0,0,0,.851-.968h.108a.529.529,0,0,0,.529-.529v-3.3A.529.529,0,0,0,286.447,8.047Zm-3.869-6.989a1.919,1.919,0,1,1-1.919,1.919A1.921,1.921,0,0,1,282.578,1.058Zm.831,27.809a3.644,3.644,0,0,0-1.662,0V27.772l1.662-.752Zm1.226-4.673a.5.5,0,0,1,.208-.045.51.51,0,0,1,.209.968l-4.531,2.05a.507.507,0,0,1-.417-.923Zm-2.888.145v-.8l1.662-.752v.8Zm2.888-4.382a.5.5,0,0,1,.208-.045.51.51,0,0,1,.21.968l-4.531,2.05a.507.507,0,0,1-.417-.923Zm-2.888.145v-.8l1.662-.752v.8Zm2.888-4.382a.5.5,0,0,1,.208-.045.51.51,0,0,1,.209.968l-4.531,2.05a.507.507,0,0,1-.417-.923Zm-2.888.145v-.8l1.662-.752v.8Zm3.306-3.459-4.531,2.05a.507.507,0,0,1-.417-.923l2.5-1.131h2.457Z" transform="translate(-278.18)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4608" data-name="Group 4608" transform="translate(14.733 1.388)">
+                  <g id="Group_4607" data-name="Group 4607" transform="translate(0)">
+                    <path id="Path_2874" data-name="Path 2874" d="M319.595,19.679a1.589,1.589,0,1,0,1.589,1.589A1.591,1.591,0,0,0,319.595,19.679Zm0,2.12a.531.531,0,1,1,.531-.531A.532.532,0,0,1,319.595,21.8Z" transform="translate(-318.006 -19.679)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4610" data-name="Group 4610" transform="translate(13.507 9.591)">
+                  <g id="Group_4609" data-name="Group 4609" transform="translate(0)">
+                    <path id="Path_2875" data-name="Path 2875" d="M301.15,135.988h-.01a.529.529,0,1,0,0,1.058h.01a.529.529,0,0,0,0-1.058Z" transform="translate(-300.611 -135.988)" fill="currentColor"/>
+                  </g>
+                </g>
+                <g id="Group_4612" data-name="Group 4612" transform="translate(18.07 9.591)">
+                  <g id="Group_4611" data-name="Group 4611" transform="translate(0)">
+                    <path id="Path_2876" data-name="Path 2876" d="M365.848,135.988h-.011a.529.529,0,0,0,0,1.058h.011a.529.529,0,1,0,0-1.058Z" transform="translate(-365.308 -135.988)" fill="currentColor"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+
+        </symbol>
+      </svg>
 
 </body>
 
