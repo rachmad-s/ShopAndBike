@@ -198,6 +198,20 @@ section{
 .btn.disabled {
     opacity: 0.3
 }
+.btn-delete{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: var(--white);
+    color: #94979b;
+    line-height: 0;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.btn-delete:hover{
+    background: var(--softgray);
+    color: #5d5e61;
+}
 
 /* Border */
 .br-1{
@@ -221,6 +235,9 @@ section{
     padding-left: .5rem;
     padding-right: .5rem;
     margin-bottom: 0;
+}
+.media-fill{
+    flex: 1;
 }
 
 /* shadow */
