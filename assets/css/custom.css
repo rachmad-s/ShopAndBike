@@ -212,6 +212,10 @@ section{
     background: var(--softgray);
     color: #5d5e61;
 }
+.btn-100{
+    width: 150px;
+}
+
 
 /* Border */
 .br-1{
