@@ -143,7 +143,7 @@
     width: 100%;
     background: inherit;
     top: 0;
-    left: -100%;
+    left: -99%;
 }
 
 /* Section */
@@ -551,7 +551,7 @@ footer .nav-link{
     position: absolute;
     width: 100%;
     height: 100%;
-    left: -100%;
+    left: -99%;
     top: 0;
     background: inherit
 }
@@ -573,4 +573,71 @@ footer .nav-link{
     background-size: cover;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
+}
+
+
+/* MOBILE STYLE */
+@media only screen and (max-width: 575px){
+
+    .display-1{
+        font-size: 3.5rem;
+    }
+
+    .display-2 {
+        font-size: 3rem;
+    }
+
+    .display-3{
+        font-size: 2.5rem;
+    }
+
+    .display-4{
+        font-size: 2rem;
+    }
+
+    .section-merge-up .merged{
+        height: 200px;
+        margin-top: -300px;
+    }
+
+    .fs-1{
+        font-size: .6rem;
+    }
+    .fs-2{
+        font-size: .7rem;
+    }
+    .fs-3{
+        font-size: .8rem;
+    }
+    .fs-4{
+        font-size: 1rem;
+    }
+    .fs-5{
+        font-size: 1.25rem;
+    }
+    .fs-6{
+        font-size: 1.5rem;
+    }
+    .fs-7{
+        font-size: 2rem;
+    }
+
+}
+
+
+/* TABLET STYLE */
+
+@media only screen and (max-width: 768px){
+    .row-inline{
+        overflow-x: auto;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+    }
+    .flex-xs-column{
+        flex-direction: column;
+    }
+    .flex-xs-column div{
+        margin-bottom: 1rem;
+    }
+
 }
