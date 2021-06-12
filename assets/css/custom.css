@@ -97,6 +97,10 @@
 .main-navbar.static{
     position: relative
 }
+.main-navbar .nav-item.active{ 
+    background: #3a5fe4;
+    border-radius: 2rem;
+}
 
 /* Hero Section */
 .hero{ 
@@ -135,15 +139,17 @@
 }
 .hero-features{
     border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
 }
-.hero-features::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: inherit;
-    top: 0;
-    left: -99%;
+.hero-carousel .owl-nav button.owl-next, .hero-carousel .owl-nav button.owl-prev{
+    background: rgba(255, 255, 255, 0.3) !important;
+    border-radius: .5rem;
+    height: 50px !important;
+    width: 60px !important;
+    padding-top: 5px !important;
+}
+.hero-carousel .owl-nav button.owl-next:focus, .hero-carousel .owl-nav button.owl-prev:focus{
+    outline: none;
 }
 
 /* Section */
@@ -392,16 +398,18 @@ section{
     padding-bottom: 100px;
 }
 .section-merge-up .merged{
-    height: 120px;
+    height: 160px;
     width: 100%;
     background: red;
-    margin-top: -220px;
+    margin-top: -260px;
     background-color: transparent;
     position: relative;
     z-index: 3;
 }
 .section-merge-up .merged .row{
     height:100%;
+    align-items: flex-end;
+    align-content: flex-end;
 }
 
 /* Product Section */
@@ -433,10 +441,13 @@ section{
     background-color: var(--darkblue);
     color: var(--white);
 }
+#product .nav-justified .nav-item{
+    flex-basis: auto;
+}
 
 footer{
     position: relative;
-    padding-top: 250px;
+    padding-top: 120px;
     padding-bottom: 120px;
     color: var(--light);
 }
@@ -533,18 +544,11 @@ footer .nav-link{
 /* OUR PARTNER SECTION */
 .our-partner{
     padding-top: 80px;
-    height: 130px;
-}
-.our-partner .title{
-    height: 50px;
 }
 .mitra-carousel-wrapper{
-    background: var(--white); 
-    padding: 2rem 60px;
-    padding-left: 0;
+    padding: 2rem 0;
     position:relative;
     z-index: 1;
-    border-bottom-right-radius: 4rem;
 }
 .mitra-carousel-wrapper::after{
     content:"";
@@ -556,8 +560,6 @@ footer .nav-link{
     background: inherit
 }
 .mitra-carousel.owl-nav-center .owl-nav{
-    width: calc(100% + 100px);
-    margin-left: -50px;
     padding: 0;
     top: 0;
     height: 100%;
