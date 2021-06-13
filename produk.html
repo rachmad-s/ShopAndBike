@@ -104,25 +104,16 @@
         <div class="container">
             <div class="merged">
                 <div class="row">
-                    <div class="col-sm-2">
-                        <p class="fs-7 font-weight-bold text-light">Produk Kami</p>
-                    </div>
-                    <div class="col-sm-10">
-                        <ul class="nav nav-tabs nav-justified" id="product-tab" role="tablist">
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs nav-justified row-inline" id="product-tab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="product-1-tab" data-toggle="tab" href="#product-1" role="tab" aria-controls="product-1" aria-selected="true">
                                     <svg width="80" height="80" viewBox="0 0 111 104">
                                      <use xlink:href="#tire-icon" />
                                     </svg>
-                                    Ban
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="product-2-tab" data-toggle="tab" href="#product-2" role="tab" aria-controls="product-2" aria-selected="false">
-                                    <svg width="80" height="80" viewBox="0 0 111 104">
-                                        <use xlink:href="#oil-icon" />
-                                    </svg>
-                                    Oli
+                                    <span class="fw-500">
+                                        Ban
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -130,7 +121,9 @@
                                     <svg width="80" height="80" viewBox="0 0 111 104">
                                         <use xlink:href="#battery-icon" />
                                     </svg>
-                                    Batterai
+                                    <span class="fw-500">
+                                        Aki
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -138,7 +131,29 @@
                                     <svg width="80" height="80" viewBox="0 0 111 104">
                                         <use xlink:href="#shock-icon" />
                                     </svg>
-                                    Shock Absorben
+                                    <span class="fw-500">
+                                        Shock Absorben
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="product-2-tab" data-toggle="tab" href="#product-2" role="tab" aria-controls="product-2" aria-selected="false">
+                                    <svg width="80" height="80" viewBox="0 0 111 104">
+                                        <use xlink:href="#oil-icon" />
+                                    </svg>
+                                    <span class="fw-500">
+                                        Oli
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="product-2-tab" data-toggle="tab" href="#product-2" role="tab" aria-controls="product-2" aria-selected="false">
+                                    <svg width="80" height="80" viewBox="0 0 111 104">
+                                        <use xlink:href="#oil-icon" />
+                                    </svg>
+                                    <span class="fw-500">
+                                        Produk & Layanan Lainnya 
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -172,7 +187,7 @@
                                             <option value="">Brand 4</option>
                                         </select>
                                     </div>
-                                    <button type="submit" class="btn btn-primary mx-sm-3 mb-2 btn-icon">
+                                    <button type="submit" class="btn btn-primary btn-sm mx-sm-3 mb-2 btn-icon">
                                         <i data-feather="filter" class="feather-5"></i>
                                     </button>
                                 </div>
@@ -185,9 +200,58 @@
             <div class="tab-content py-7" id="product-tab-content">
                 <div class="tab-pane fade show active" id="product-1" role="tabpanel" aria-labelledby="product-1-tab">
                     <div class="row">
-                        <div class="col-md-3 mb-5">
+                        <div class="col-6 col-md-3 mb-5">
+                            <a href="detail-produk.html" class="link">
+                                <div class="card border-0 br-1 shadow-lg">
+                                    <div class="card-top-cta">
+                                        <div class="promo-badge">
+                                            <span class="badge badge-primary">
+                                                Promo
+                                            </span>
+                                        </div>
+                                        <div class="align-self-end">
+                                            <i 
+                                                data-feather="shopping-cart"
+                                                class="text-light"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
+                                    <div class="card-body">
+                                        <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                            Ban Pirelli
+                                        </p>
+                                        <p class="fs-2 mb-0 opacity-75">
+                                            Pirelli: Diablo Scooter
+                                        </p>
+    
+                                        <div class="row justify-content-between flex-xs-column mt-5">
+                                            <div class="col-6">
+                                                <p class="fs-2">
+                                                    80/90-14M/ 40S (Depan)
+                                                </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                    Rp. 100.000
+                                                </p>
+                                                <p class="fs-3 text-primary">
+                                                    Rp. 50.000
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-5">
                             <div class="card border-0 br-1 shadow-lg">
                                 <div class="card-top-cta">
+                                    <div class="promo-badge">
+                                        <span class="badge badge-primary">
+                                            Promo
+                                        </span>
+                                    </div>
                                     <div class="align-self-end">
                                         <i 
                                             data-feather="shopping-cart"
@@ -197,23 +261,39 @@
                                 </div>
                                 <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
                                 <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                        Ban Pirelli
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
+                                    <p class="fs-2 mb-0 opacity-75">
+                                        Pirelli: Diablo Scooter
+                                    </p>
+
+                                    <div class="row justify-content-between flex-xs-column mt-5">
+                                        <div class="col-6">
+                                            <p class="fs-2">
+                                                80/90-14M/ 40S (Depan)
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                Rp. 100.000
+                                            </p>
+                                            <p class="fs-3 text-primary">
+                                                Rp. 50.000
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-5">
+                        <div class="col-6 col-md-3 mb-5">
                             <div class="card border-0 br-1 shadow-lg">
                                 <div class="card-top-cta">
+                                    <div class="promo-badge">
+                                        <span class="badge badge-primary">
+                                            Promo
+                                        </span>
+                                    </div>
                                     <div class="align-self-end">
                                         <i 
                                             data-feather="shopping-cart"
@@ -223,23 +303,39 @@
                                 </div>
                                 <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
                                 <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                        Ban Pirelli
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
+                                    <p class="fs-2 mb-0 opacity-75">
+                                        Pirelli: Diablo Scooter
+                                    </p>
+
+                                    <div class="row justify-content-between flex-xs-column mt-5">
+                                        <div class="col-6">
+                                            <p class="fs-2">
+                                                80/90-14M/ 40S (Depan)
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                Rp. 100.000
+                                            </p>
+                                            <p class="fs-3 text-primary">
+                                                Rp. 50.000
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-5">
+                        <div class="col-6 col-md-3 mb-5">
                             <div class="card border-0 br-1 shadow-lg">
                                 <div class="card-top-cta">
+                                    <div class="promo-badge">
+                                        <span class="badge badge-primary">
+                                            Promo
+                                        </span>
+                                    </div>
                                     <div class="align-self-end">
                                         <i 
                                             data-feather="shopping-cart"
@@ -249,23 +345,39 @@
                                 </div>
                                 <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
                                 <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                        Ban Pirelli
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
+                                    <p class="fs-2 mb-0 opacity-75">
+                                        Pirelli: Diablo Scooter
+                                    </p>
+
+                                    <div class="row justify-content-between flex-xs-column mt-5">
+                                        <div class="col-6">
+                                            <p class="fs-2">
+                                                80/90-14M/ 40S (Depan)
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                Rp. 100.000
+                                            </p>
+                                            <p class="fs-3 text-primary">
+                                                Rp. 50.000
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-5">
+                        <div class="col-6 col-md-3 mb-5">
                             <div class="card border-0 br-1 shadow-lg">
                                 <div class="card-top-cta">
+                                    <div class="promo-badge">
+                                        <span class="badge badge-primary">
+                                            Promo
+                                        </span>
+                                    </div>
                                     <div class="align-self-end">
                                         <i 
                                             data-feather="shopping-cart"
@@ -275,23 +387,39 @@
                                 </div>
                                 <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
                                 <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                        Ban Pirelli
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
+                                    <p class="fs-2 mb-0 opacity-75">
+                                        Pirelli: Diablo Scooter
+                                    </p>
+
+                                    <div class="row justify-content-between flex-xs-column mt-5">
+                                        <div class="col-6">
+                                            <p class="fs-2">
+                                                80/90-14M/ 40S (Depan)
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                Rp. 100.000
+                                            </p>
+                                            <p class="fs-3 text-primary">
+                                                Rp. 50.000
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-5">
+                        <div class="col-6 col-md-3 mb-5">
                             <div class="card border-0 br-1 shadow-lg">
                                 <div class="card-top-cta">
+                                    <div class="promo-badge">
+                                        <span class="badge badge-primary">
+                                            Promo
+                                        </span>
+                                    </div>
                                     <div class="align-self-end">
                                         <i 
                                             data-feather="shopping-cart"
@@ -301,23 +429,39 @@
                                 </div>
                                 <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
                                 <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                        Ban Pirelli
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
+                                    <p class="fs-2 mb-0 opacity-75">
+                                        Pirelli: Diablo Scooter
+                                    </p>
+
+                                    <div class="row justify-content-between flex-xs-column mt-5">
+                                        <div class="col-6">
+                                            <p class="fs-2">
+                                                80/90-14M/ 40S (Depan)
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                Rp. 100.000
+                                            </p>
+                                            <p class="fs-3 text-primary">
+                                                Rp. 50.000
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-5">
+                        <div class="col-6 col-md-3 mb-5">
                             <div class="card border-0 br-1 shadow-lg">
                                 <div class="card-top-cta">
+                                    <div class="promo-badge">
+                                        <span class="badge badge-primary">
+                                            Promo
+                                        </span>
+                                    </div>
                                     <div class="align-self-end">
                                         <i 
                                             data-feather="shopping-cart"
@@ -327,23 +471,39 @@
                                 </div>
                                 <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
                                 <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                        Ban Pirelli
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
+                                    <p class="fs-2 mb-0 opacity-75">
+                                        Pirelli: Diablo Scooter
+                                    </p>
+
+                                    <div class="row justify-content-between flex-xs-column mt-5">
+                                        <div class="col-6">
+                                            <p class="fs-2">
+                                                80/90-14M/ 40S (Depan)
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                Rp. 100.000
+                                            </p>
+                                            <p class="fs-3 text-primary">
+                                                Rp. 50.000
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-5">
+                        <div class="col-6 col-md-3 mb-5">
                             <div class="card border-0 br-1 shadow-lg">
                                 <div class="card-top-cta">
+                                    <div class="promo-badge">
+                                        <span class="badge badge-primary">
+                                            Promo
+                                        </span>
+                                    </div>
                                     <div class="align-self-end">
                                         <i 
                                             data-feather="shopping-cart"
@@ -353,42 +513,27 @@
                                 </div>
                                 <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
                                 <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-4 mb-0 font-weight-bold text-darkblue">
+                                        Ban Pirelli
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-5">
-                            <div class="card border-0 br-1 shadow-lg">
-                                <div class="card-top-cta">
-                                    <div class="align-self-end">
-                                        <i 
-                                            data-feather="shopping-cart"
-                                            class="text-light"
-                                        ></i>
-                                    </div>
-                                </div>
-                                <img src="https://via.placeholder.com/255?text=Min+Width+255px" class="img-fluid mb-2 card-img-top" alt="">
-                                <div class="card-body">
-                                    <p class="fs-4 mb-2 font-weight-bold text-darkblue">
-                                        Ban Super Baru
+                                    <p class="fs-2 mb-0 opacity-75">
+                                        Pirelli: Diablo Scooter
                                     </p>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="fs-3 text-primary">
-                                            Rp. 100.000
-                                        </p>
-                                        <p class="fs-3">
-                                            Anton Kardi
-                                        </p>
+
+                                    <div class="row justify-content-between flex-xs-column mt-5">
+                                        <div class="col-6">
+                                            <p class="fs-2">
+                                                80/90-14M/ 40S (Depan)
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="fs-2 mb-0 opacity-75 strikethrough">
+                                                Rp. 100.000
+                                            </p>
+                                            <p class="fs-3 text-primary">
+                                                Rp. 50.000
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -529,19 +674,18 @@
 
     <!-- START PARTNER SECTION -->
 
-<section class="our-partner bg-softgray">
-    <div class="container">
-        <div class="title">
-            <h2 class="font-weight-bold mb-0">Mitra Kami</h2>
+    <section class="our-partner">
+        <div class="container">
+            <div class="title">
+                <h2 class="font-weight-bold mb-0">Mitra Kami</h2>
+            </div>
         </div>
-    </div>
-    <div class="merged-down">
         <div class="container">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <div class="mitra-carousel-wrapper">
                         <div class="mitra-carousel owl-nav-center owl-carousel">
-                            <img src="https://via.placehifslfshoolder.com/220x150.html" alt="">
+                            <img src="https://via.placeholder.com/220x150.html" alt="">
                             <img src="https://via.placeholder.com/220x150.html" alt="">
                             <img src="https://via.placeholder.com/220x150.html" alt="">
                             <img src="https://via.placeholder.com/220x150.html" alt="">
@@ -552,91 +696,90 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- END OF PARTNER SECTION -->
+    <!-- END OF PARTNER SECTION -->
 
-<!-- START FOOTER SECTION -->
-<footer style="background-image: url(assets/images/hero-background-2x.jpg)" class="background-image">
-    <div class="dark-overlay"></div>
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-md-5">
-                <img src="assets/images/logo.svg" class="mb-4" alt="ShopAndBike">
-                <p class="mb-5 fs-2">
-                    High quality Azerbaijani furniture made from eco-friendly
-                    materials. Designed for modern, minimalist apartments
-                </p>
-                <div class="media">
-                    <div class="media-left mr-3">
-                        <i data-feather="phone" class="feather-8 feather-stroke-1"></i>
-                    </div>
-                    <div class="media-right">
-                        <p class="mb-1 fw-500">Hubungi Kami</p>
-                        <p class="mb-1 font-weight-light">0808-1500-300</p>
+    <!-- START FOOTER SECTION -->
+    <footer style="background-image: url(assets/images/hero-background-2x.jpg)" class="background-image">
+        <div class="dark-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-5">
+                    <img src="assets/images/logo.svg" class="mb-4" alt="ShopAndBike">
+                    <p class="mb-5 fs-2">
+                        High quality Azerbaijani furniture made from eco-friendly
+                        materials. Designed for modern, minimalist apartments
+                    </p>
+                    <div class="media">
+                        <div class="media-left mr-3">
+                            <i data-feather="phone" class="feather-8 feather-stroke-1"></i>
+                        </div>
+                        <div class="media-right">
+                            <p class="mb-1 fw-500">Hubungi Kami</p>
+                            <p class="mb-1 font-weight-light">0808-1500-300</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="font-weight-bold">Produk</p>
-                        <ul class="nav flex-column fs-2">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Battery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Aki</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Shock Absorber</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Oli</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="font-weight-bold">Dukungan</p>
-                        <ul class="nav flex-column fs-2">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Syarat dan Ketentuan</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Kebijakam Privasi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Call Center</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="font-weight-bold">Social Media</p>
-                        <ul class="nav flex-column fs-2">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">
-                                    <i data-feather="facebook" class="feather-filled feather-4"></i>
-                                    Facebook
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">
-                                    <i data-feather="instagram" class="feather-4"></i>
-                                    Instagram
-                                </a>
-                            </li>
-                        </ul>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">Produk</p>
+                            <ul class="nav flex-column fs-2">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Battery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Aki</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Shock Absorber</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Oli</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">Dukungan</p>
+                            <ul class="nav flex-column fs-2">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Syarat dan Ketentuan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Kebijakam Privasi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Call Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">Social Media</p>
+                            <ul class="nav flex-column fs-2">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">
+                                        <i data-feather="facebook" class="feather-filled feather-4"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">
+                                        <i data-feather="instagram" class="feather-4"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- END OF FOOTER SECTION -->
+    </footer>
+    <!-- END OF FOOTER SECTION -->
 
 
     <!-- SVGs : Used in Product Tab Section -->

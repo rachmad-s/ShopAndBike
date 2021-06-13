@@ -236,6 +236,13 @@ section{
 .btn-flex i, .btn-flex svg{
     float: left;
 }
+.link{
+    color: unset;
+}
+.link:hover{
+    color: unset;
+    text-decoration: none;
+}
 
 
 
@@ -263,8 +270,9 @@ section{
     margin-bottom: 0;
 }
 .media-fill{
-    flex: 1;
+    flex: 1 auto;
 }
+
 
 /* shadow */
 .shadow {
