@@ -1,5 +1,14 @@
 $(document).ready(function() {
     
+    $(window).on('scroll', function() {
+        if(window.scrollY > 100){
+            $('.main-navbar').addClass('navbar-sticky')
+        }else{
+            $('.main-navbar').removeClass('navbar-sticky')
+        }
+    })
+
+    
     $('.hero-carousel').owlCarousel({
         items: 1,
         nav: true,

@@ -89,6 +89,7 @@
 
 /* Navbar section */
 .main-navbar{
+    transition: .3s;
     position: absolute;
     width: 100%;
     z-index: 999;
@@ -104,6 +105,55 @@
     background: #3a5fe4;
     border-radius: 2rem;
 }
+.main-navbar.navbar-sticky{
+    transition: .3s;
+    position: fixed;
+    top: 0;
+    background-color: var(--light) !important;
+    box-shadow: 0px 8px 20px -5px rgba(20, 17, 43, 0.15);
+}
+.main-navbar.navbar-sticky .nav-link{
+    color: var(--dark);
+}
+.main-navbar.navbar-sticky .nav-link:hover{
+    color: black;
+}
+.main-navbar.navbar-sticky .navbar-toggler{
+    color: var(--dark);
+}
+.main-navbar.navbar-sticky .navbar-toggler:active, .main-navbar.navbar-sticky .navbar-toggler:focus{
+    outline: none;
+}
+.main-navbar.navbar-sticky .navbar-toggler-icon{
+    background-image: none;
+    width: 30px;
+    height: 3px;
+    background-color: var(--dark);
+    border-radius: 3px;
+    position: relative;
+}
+.main-navbar.navbar-sticky .navbar-toggler-icon::after{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--dark);
+    top: 8px;
+    content: "";
+    left: 0;
+}
+.main-navbar.navbar-sticky .navbar-toggler-icon::before{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--dark);
+    top: -8px;
+    content: "";
+    left: 0;
+}
+
+
 
 /* Hero Section */
 .hero{ 
@@ -595,7 +645,13 @@ footer .nav-link{
 
 /* MOBILE STYLE */
 @media only screen and (max-width: 575px){
-
+    .main-navbar .navbar-collapse{
+        padding: 2rem 0;
+    }
+    .main-navbar .navbar-collapse .nav-item{
+        margin-bottom: 1rem;
+    }
+    
     .display-1{
         font-size: 3.5rem;
     }
