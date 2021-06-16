@@ -59,7 +59,7 @@ $(document).ready(function() {
     // mitra caorusel
     $('.mitra-carousel').owlCarousel({
         items: 4,
-        margin: 16,
+        margin: 48,
         nav: true,
         dots: false,
         navText: ['<span class="gg-chevron-left"> </span>', '<span class="gg-chevron-right"> </span>']
