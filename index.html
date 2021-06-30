@@ -358,7 +358,7 @@
                     <div class="d-flex justify-content-between">
                         <h4 class="text-darkblue mb-6 font-weight-bold">Artikel Terbaru Dari Kami</h4>
                         <div class="d-none d-md-block">
-                            <a href="" class="btn btn-primary btn-pills text-uppercase">Lihat Semua</a>
+                            <a href="artikel.html" class="btn btn-primary btn-pills text-uppercase">Lihat Semua</a>
                         </div>
                     </div>
                 </div>
@@ -379,7 +379,7 @@
                                         Artikel tentang hubungan ban dan motor menjadikan hidup lebih mudah dan melegakan
                                     </p>
         
-                                    <a href="" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
+                                    <a href="detail-artikel.html" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -400,7 +400,7 @@
                                         Artikel tentang hubungan ban dan motor menjadikan hidup lebih mudah dan melegakan
                                     </p>
         
-                                    <a href="" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
+                                    <a href="detail-artikel.html" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -421,7 +421,7 @@
                                         Artikel tentang hubungan ban dan motor menjadikan hidup lebih mudah dan melegakan
                                     </p>
         
-                                    <a href="" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
+                                    <a href="detail-artikel.html" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -443,7 +443,7 @@
                                         Artikel tentang hubungan ban dan motor menjadikan hidup lebih mudah dan melegakan
                                     </p>
         
-                                    <a href="" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
+                                    <a href="detail-artikel.html" class="fs-2 btn btn-primary btn-pills text-uppercase btn-sm">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -1409,6 +1409,51 @@
         </symbol>
       </svg>
       
+
+        <!-- Floating Button -->
+        <a href="#" data-toggle="modal" data-target="#searchModal" class="floating-button">
+            <i data-feather="search"></i>
+        </a>
+
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmation" aria-hidden="true">
+            <form action="">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Cari Produk</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body bg-softgray">
+                            <div class="form-group">
+                                <label for="merk">Pilih Merk</label>
+                                <select name="pilih-merk" id="merk" class="form-control"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="type">Pilih Type</label>
+                                <select name="pilih-type" id="type" class="form-control"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="kapasitas">Pilih Kapasitas ( CC ) </label>
+                                <select name="pilih-kapasitas" id="kapasitas" class="form-control"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bahan-bakar">Pilih Bahan Bakar</label>
+                                <select name="pilih-bahan-bakar" id="bahan-bakar" class="form-control"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tahun">Pilih Tahun</label>
+                                <select name="pilih-tahun" id="tahun" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-pills btn-100 btn-darkblue">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
 
 </body>
 
