@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - Shop And Bike</title>
+    <title>FAQ - Shop And Bike</title>
 
     <!-- Font family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,6 +21,43 @@
 
     <!-- Icons using Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- FAQs Style -->
+    <style>
+        #accordion .card button{
+            text-align: left;
+            padding: 1rem 0;
+            color: #464646;
+            white-space: unset;
+            background: transparent;
+        }
+        #accordion .card button::after{ 
+            content: "❯";
+            position: absolute;
+            right: 2rem;
+            top: 1rem;
+            font-size: 2rem;
+            transform: rotate(-90deg);
+            color: rgb(25, 37, 141);
+            transition: .4s;
+        }
+        #accordion .card button.collapsed::after{
+            transform: rotate(0deg);
+        }
+        #accordion .card-header{
+            background: transparent;
+            border: 0
+        }
+        #accordion .collapse{
+            color: #6d6b6b;
+        }
+        @media (max-width: 767px){
+            #accordion .card button h5{
+                width: 80%
+            }
+        }
+    </style>
+
 </head>
 <body>
 
@@ -37,9 +74,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="tentang-kami.html">Tetang Kami</a>
                 </li>
                 <li class="nav-item">
@@ -70,32 +107,99 @@
 </nav>
 <!-- END OF NAVBAR SECTION -->
 
-<section class="section-100">
+<section class="section-100 bg-softgray">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center py-6" style="border:3px solid #dedede">
             <div class="col-md-10">
                 
-                <img src="https://via.placeholder.com/950x500.html" class="img-fluid mb-6" alt="">
+                <h1 class="font-weight-bold mb-7 text-center">Frequently Asked Questions</h1>
                 
-                <h1 class="font-weight-bold mb-7 text-darkblue">Tentang Motor dan ban</h1>
-                <p class="lead mb-5">
-                    Raised without antibiotics and full of flavor, this beef is the base of big, juicy burgers, savory meat loaf and rich Bolognese sauce. You can enjoy
-                    <br><br>
-                    this delicious local ground beef for your meatloaf, burgers, meatballs, shepherd's pie, spicy taco meat and so much more.
-                    As one of Farmart's premium beef suppliers, Local Angus works with a coalition of small family farms throughout the Mid-Atlantic region* who
-                    <br><br>
-                    feed their cattle a diet of primarily grass, supplemented by grain throughout the finishing months. Every farm in this program is independently
-                    <br><br>
-                    Raised without antibiotics and full of flavor, this beef is the base of big, juicy burgers, savory meat loaf and rich Bolognese sauce. You can enjoy
-                    this delicious local ground beef for your meatloaf, burgers, meatballs, shepherd's pie, spicy taco meat and so much more.
-                    As one of Farmart's premium beef suppliers, Local Angus works with a coalition of small family farms throughout the Mid-Atlantic region* who
-                    <br><br>
-                    feed their cattle a diet of primarily grass, supplemented by grain throughout the finishing months. Every farm in this program is independently
-                </p>
-                <a href="" class="btn btn-info">
-                    <i data-feather="share-2" class="feather-3 middle"></i>
-                    Bagikan
-                </a>
+                <div id="accordion">
+
+                    <div class="card">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    Shop&Bike itu apa ?
+                                </h5>
+                            </div>
+                        </button>
+                  
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Shop&Bike adalah outlet ritel modern otomotif, yang menyediakan suku cadang yang bersifat umum & banyak
+                                digunakan, dengan kualitas terpercaya, untuk berbagai merk sepeda motor : utamanya untuk motor kendaraan roda
+                                dua pribadi. Jadi konsumen dapat memperoleh produk yang terjamin secara cepat & nyaman, untuk berbagai merk
+                                mobil utama yang ada di Indonesia.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    Produk apa saja yang dijual di Shop&Bike ?
+                                </h5>
+                            </div>
+                        </button>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    Apa keunggulan Shop&Bike dibanding toko sejenis lainnya ?
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faqbody4" aria-expanded="false" aria-controls="faqbody4">
+                            <div class="card-header" id="faq4">
+                                <h5 class="mb-0">
+                                    Apa keunggulan Shop&Bike dibanding toko sejenis lainnya ?
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="faqbody4" class="collapse" aria-labelledby="faq4" data-parent="#accordion">
+                            <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faqbody5" aria-expanded="false" aria-controls="faqbody5">
+                            <div class="card-header" id="faq5">
+                                <h5 class="mb-0">
+                                    Apa keunggulan Shop&Bike dibanding toko sejenis lainnya ?
+                                </h5>
+                            </div>
+                        </button>
+
+                        <div id="faqbody5" class="collapse" aria-labelledby="faq5" data-parent="#accordion">
+                            <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+                
             </div>
         </div>
     </div>
