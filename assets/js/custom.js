@@ -60,7 +60,25 @@ $(document).ready(function() {
     $('.mitra-carousel').owlCarousel({
         items: 4,
         margin: 48,
-        nav: true,
+        responsive : {
+            0 : {
+                items: 2,
+                margin: 24,
+                nav: false,
+                autoplay: true,
+                loop: true
+            },
+            480 : {
+                items: 3,
+                margin: 48,
+                nav: true,
+            },
+            768 : {
+                items: 4,
+                margin: 48,
+                nav: true,
+            }
+        },
         dots: false,
         navText: ['<span class="gg-chevron-left"> </span>', '<span class="gg-chevron-right"> </span>']
     })

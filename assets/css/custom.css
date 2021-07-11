@@ -152,7 +152,10 @@
     content: "";
     left: 0;
 }
-
+.navbar-brand img{ 
+    width: 80px;
+    height: auto
+}
 
 
 /* Hero Section */
@@ -520,7 +523,8 @@ section{
 }
 
 /* Floating Button */
-.floating-button{ 
+.floating-button{
+    z-index: 999; 
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -561,10 +565,10 @@ section{
     text-align: left;
 }
 #product #product-tab li:first-child{
-    border-top-left-radius: 2.5rem;
+    border-top-left-radius: inherit;
 }
 #product #product-tab li:last-child{
-    border-top-right-radius: 2.5rem;
+    border-top-right-radius: inherit;
 }
 #product #product-tab .nav-link.active{
     border: none;
@@ -716,6 +720,31 @@ footer .nav-link{
 
 /* MOBILE STYLE */
 @media only screen and (max-width: 575px){
+    .owl-nav-center .owl-nav object {
+        width: 26px;
+        height: 26px;
+        pointer-events: none;
+    }
+    .hero-carousel .owl-nav button.owl-next, .hero-carousel .owl-nav button.owl-prev{
+        height: 50px !important;
+        width: 40px !important;
+        padding-top: 4px !important;
+    }
+    .navbar-brand img{ 
+        width: 60px;
+        height: auto
+    }
+    .mitra-carousel.owl-nav-center .owl-nav{
+        left: 0px;
+        width: 100%;
+    }
+    #product #product-tab{
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+    }
+    #product #product-tab span{
+        white-space: nowrap;
+    }
     .main-navbar .navbar-collapse{
         padding: 2rem 0;
     }
